@@ -34,7 +34,7 @@ class Email {
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has creado tu cuenta App Salon, solo debes confirmala presionando el siguiente enlace</p>";
-        $contenido .= "<p>Presiona Aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a> </p>";
+        $contenido .= "<p>Presiona Aquí: <a href='https://frozen-mesa-37931.herokuapp.com/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a> </p>";
         $contenido .= "<p>Si tu no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
         $mail->Body = $contenido;
@@ -63,7 +63,7 @@ class Email {
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
-        $contenido .= "<p>Presiona Aquí: <a href='http://localhost:3000/recuperar?token=" . $this->token . "'>Reestablecer Password</a> </p>";
+        $contenido .= "<p>Presiona Aquí: <a href='https://frozen-mesa-37931.herokuapp.com/recuperar?token=" . $this->token . "'>Reestablecer Password</a> </p>";
         $contenido .= "<p>Si tu no solicitaste esta cambio, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
         $mail->Body = $contenido;
