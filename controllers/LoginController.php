@@ -57,7 +57,7 @@ class LoginController {
         session_start();  
         
         $_SESSION = [];
-        header('Location:/');
+        header('Location: /');
     }
     public static function olvide(Router $router) {
         $alertas = [];
@@ -166,7 +166,6 @@ class LoginController {
                     if($resultado) {
                         header('Location: /mensaje');
                     }
-                    
                 }
            }
         }

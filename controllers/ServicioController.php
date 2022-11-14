@@ -32,7 +32,6 @@ class ServicioController {
                 $servicio->guardar();
                 header('Location: /servicios');
             }
-
         }
 
         $router->render('servicios/crear', [
