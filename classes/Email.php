@@ -18,11 +18,11 @@ class Email {
         // Crear el objeto de email
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.sendinblue.com';
+        $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
-        $mail->Port = 587;
-        $mail->Username = 'jorgecerda591.jc@gmail.com';
-        $mail->Password = '36xjqwITbWHm87Vy';
+        $mail->Port = 2525;
+        $mail->Username = '70948dff904e2d';
+        $mail->Password = '5287ad9415375e';
 
         $mail->setFrom('cuentas@appsalon.com');
         $mail->addAddress($this->email);
@@ -47,11 +47,11 @@ class Email {
         // Crear el objeto de email
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.sendinblue.com';
+        $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
-        $mail->Port = 587;
-        $mail->Username = 'jorgecerda591.jc@gmail.com';
-        $mail->Password = '36xjqwITbWHm87Vy';
+        $mail->Port = 2525;
+        $mail->Username = '70948dff904e2d';
+        $mail->Password = '5287ad9415375e';
 
         $mail->setFrom('cuentas@appsalon.com');
         $mail->addAddress($this->email);
